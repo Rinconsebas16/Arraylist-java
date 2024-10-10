@@ -24,7 +24,7 @@ public void mostrarInventario()
                 return null;
             }
         }
-    public void mostrarCantidad (String nombre, int nuevaCantidad)
+    public void modificarCantidad (String nombre, int nuevaCantidad)
     {
         try {
             for (Producto producto : productos) {
