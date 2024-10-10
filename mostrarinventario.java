@@ -1,4 +1,23 @@
-public void mostrarInventario()
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Inventario {
+    //Atributos
+    private ArrayList<Producto> productos = new ArrayList<>();
+
+    //Constructor
+
+    public Inventario(ArrayList<Producto> productos) {
+        this.productos = productos;
+    }
+
+    //metodos
+    public void agregarProducto(Producto p)
+    {
+        productos.add(p);
+    }
+
+    public void mostrarInventario()
     {
         for (Producto producto : productos)
         {
@@ -39,5 +58,4 @@ public void mostrarInventario()
 
         }
     }
-    
 }
